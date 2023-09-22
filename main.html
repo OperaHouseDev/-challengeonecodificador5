@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="Logo.png" alt="logo de alura" >
+    </header>
+    <main>
+        <section>
+            <textarea class="input" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+        </section>
+        <section class="info">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+            </svg>
+            <h6>Solo letras minúsculas y sin acentos</h6>
+        </section>
+        <section class="buttons">
+            <button class="btn-encrypt" onclick="btnEncrypt()">Encriptar</button>
+            <button class="btn-decrypt" onclick="btnDecrypt()">Desencriptar</button>
+        </section>
+    </main>
+    <footer>
+        <section class="container">
+            <textarea class="output" cols="20" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
+        </section>
+        <div>
+            <button class="btn-copy" onclick="copyText()">Copiar</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

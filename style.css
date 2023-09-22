@@ -1,0 +1,127 @@
+*{
+    background:#F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+body{
+    display: flex;
+}
+
+.logo{
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 683px;
+    width: 577px;
+    border: none;
+    color: #0A3871;
+    padding: 2px;
+    resize: none;
+    margin-top: 160px;
+    margin-left: 40px; 
+    outline: none;
+}
+
+.input::placeholder{ 
+    color: #0A3871;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 8px;
+    margin-left: 40px;
+}
+
+.info h6{
+    color: #495057;
+    font-size: 18px;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 26px;
+    margin-left: 40px;
+}
+
+.btn-encrypt{
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.btn-decrypt{
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+    margin-left: 24px;
+}
+
+footer{
+    margin-left: 80px;
+    margin-top: 32px;
+}
+
+.container{
+    height: 944px;
+    width: 400px;
+    border: none;
+    border-radius: 32px;
+    background-color: white;
+    background-image: url("/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+}
+
+.output{
+    height: 805px;
+    width: 360px;
+    border: none;
+    color: #0A3871;
+    padding: 20px;
+    background: none;
+    resize: none;
+    outline: none;
+}
+
+.output::placeholder{
+    color: black;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    top: 500px;
+}
+
+.btn-copy{
+    background: white;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-left: 32px;
+    position: relative;
+    bottom: 82px;
+}
