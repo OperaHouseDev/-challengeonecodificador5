@@ -24,7 +24,8 @@ function btnEncrypt(){
         btncopy.style.visibility= "visible";
         return console.log("Texto valido para encriptar")
     }
-    return alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
+    alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
+    return console.log("Texto inválido para encriptar")
 }
 
 function btnDecrypt(){
@@ -34,9 +35,10 @@ function btnDecrypt(){
         txtoutput.value = decryptedtxt;
         container.style.backgroundImage= "none";
         btncopy.style.visibility= "visible";
-        return console.log("Texto valido para encriptar")
+        return console.log("Texto valido para desencriptar")
     }
-    return alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
+    alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
+    return console.log("Texto inválido para desencriptar")
 }
 
 function copyText(){
