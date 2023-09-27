@@ -10,10 +10,9 @@ btncopy.style.visibility= "hidden";
 function validateText(){
     let txtValue = document.querySelector(".input").value;
     if (!regex.test(txtValue)){ 
-        alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
-        location.reload();
         return true
     }
+    return false
 }
 
 function btnEncrypt(){
@@ -23,7 +22,9 @@ function btnEncrypt(){
         txtoutput.value = encryptedtxt;
         container.style.backgroundImage= "none";
         btncopy.style.visibility= "visible";
+        return console.log("Texto valido para encriptar")
     }
+    return alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
 }
 
 function btnDecrypt(){
@@ -33,7 +34,9 @@ function btnDecrypt(){
         txtoutput.value = decryptedtxt;
         container.style.backgroundImage= "none";
         btncopy.style.visibility= "visible";
+        return console.log("Texto valido para encriptar")
     }
+    return alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
 }
 
 function copyText(){
