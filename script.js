@@ -2,14 +2,15 @@ const txtinput = document.querySelector(".input");
 const txtoutput = document.querySelector(".output");
 const container = document.querySelector(".container");
 const btncopy = document.querySelector(".btn-copy");
-const regex = /^[a-z]/; // solo minusculas, sin acentos y sin caracteres especiales
+const regex = /[A-Z]/; // solo minusculas
+const regex2 = /[\u00E0-\u00FC]/; //vocales sin acentos
 const keys = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]]; // codigos para encriptar vocales
 
 btncopy.style.visibility= "hidden";
 
 function validateText(){
     let txtValue = document.querySelector(".input").value;
-    if (!regex.test(txtValue)){ 
+    if (regex.test(txtValue) || regex2.test(txtValue)){ 
         return true
     }
     return false
@@ -24,7 +25,7 @@ function btnEncrypt(){
         btncopy.style.visibility= "visible";
         return console.log("Texto valido para encriptar")
     }
-    alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
+    alert("ERROR! No se permite el uso de letras mayusculas, o vocales con acento")
     return console.log("Texto inválido para encriptar")
 }
 
@@ -37,7 +38,7 @@ function btnDecrypt(){
         btncopy.style.visibility= "visible";
         return console.log("Texto valido para desencriptar")
     }
-    alert("ERROR! No se permite el uso de letras mayusculas, con acento o caracteres especiales")
+    alert("ERROR! No se permite el uso de letras mayusculas, o vocales con acento")
     return console.log("Texto inválido para desencriptar")
 }
 
